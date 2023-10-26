@@ -70,6 +70,11 @@ void findIndex( int index, struct Node * head) {
 }
 //Agregar un nodo en un indice cualquiera
 void newNode(int index ,int data , struct Node * head) {
+	//Si es en el indice 0 se agrega a la cabeza
+	if ( index == 0 ) {
+		insert( data , &head);
+		return;
+	}
 	struct Node* current = head;
 	int count = 0;
 	struct Node* nuevo = (struct Node*)malloc(sizeof(struct Node));
@@ -158,15 +163,30 @@ int main() {
 	//Se inserta un nodo al incio
 	insert( 9, &head);
 	//Se imprime la lista
+	printf("Agregar un nodo al incio\n");
 	printList(head);
+	//Se inserta otro nodo al inicio
 	insert( 7, &head);
+	//Se imprime la lista
+	printList(head);
+	//Borrar el nodo
+	printf("Borar un nodo\n");
 	deleteNode( 7 ,&head);
 	printList(head);
+	//Agregar un nodo al final
+	printf("Agregar un nodo al final\n");
 	finalnew( 8 , head);
 	printList(head);
 	insert(10, &head);
 	printList(head);
+	//Buscar en el indice 1
+	printf("Buscar un nodo en un indice\n");
 	findIndex( 1, head);
+	//Buscar en un indice que no existe 
+	printf("Buscar un nodo en un indice que no existe\n");
+	findIndex(10, head);
+	//Agregar un nodo en un indice cualquiera
+	printf("Agregar un nodo en un indice cualquiera\n");
 	newNode( 1 , 4, head);
 	printList(head);
 
