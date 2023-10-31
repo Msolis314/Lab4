@@ -160,7 +160,7 @@ void searchNode( int valor, struct Node *node){
 
 int main() {
 	struct Node* head = NULL;
-	//Se inserta un nodo al incio
+	//Se inserta un nodo al inicio
 	insert( 9, &head);
 	//Se imprime la lista
 	printf("Agregar un nodo al incio\n");
@@ -170,7 +170,7 @@ int main() {
 	//Se imprime la lista
 	printList(head);
 	//Borrar el nodo
-	printf("Borar un nodo\n");
+	printf("Borrar un nodo, %d\n", head ->data);
 	deleteNode( 7 ,&head);
 	printList(head);
 	//Agregar un nodo al final
@@ -180,7 +180,7 @@ int main() {
 	insert(10, &head);
 	printList(head);
 	//Buscar en el indice 1
-	printf("Buscar un nodo en un indice\n");
+	printf("Buscar un nodo en un indice: 1\n");
 	findIndex( 1, head);
 	//Buscar en un indice que no existe 
 	printf("Buscar un nodo en un indice que no existe\n");
