@@ -172,7 +172,7 @@ Al llamar cada una de las funciones desde el main de la siguiente manera:
 ```
 Se obtiene el siguiente resultado, y por tanto se cumple el objetivo de realizar operaciones en listas:
 
-![alt image](https://github.com/Msolis314/Clases)
+![alt image](https://github.com/Msolis314/Clases/blob/main/La4Result.png)
 
 Al correr el siguiente comando en la terminal: 
 
